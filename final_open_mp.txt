@@ -1,0 +1,22 @@
+1) #pragma omp parallel: This directive creates a parallel region, which means that the code following the directive will be executed by multiple threads.
+
+
+2) #pragma omp parallel for: This directive creates a parallel for loop, which means that the loop following the directive will be executed by multiple threads.
+
+
+3) #pragma omp critical: This directive protects a critical section, which means that only one thread can execute the code within the critical section at a time.
+
+
+4) #pragma omp parallel sections: This directive creates a parallel sections construct, which means that the code within each section will be executed by a different thread.
+
+
+5) #pragma omp num_threads(n_threads): This directive specifies the number of threads to be used in the parallel region.
+
+
+6) #pragma omp schedule(dynamic): This directive specifies the scheduling policy for the parallel for loop. The dynamic scheduling policy dynamically assigns iterations of the loop to threads based on their current workload.
+
+
+7)#pragma omp parallel for reduction(+:duplicateFound)
+
+
+8) #pragma omp section
